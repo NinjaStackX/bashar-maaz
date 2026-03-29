@@ -64,10 +64,10 @@ aside .logo {
   text-transform: capitalize;
 }
 aside .logo a {
-  color: var(--text-black-700);
+  color: var(--text-black-900);
   font-weight: 700;
   font-size: 30px;
-  background: red;
+  /* background: red; */
   padding: 15px 20px;
   letter-spacing: 5px;
   position: relative;
@@ -75,4 +75,24 @@ aside .logo a {
 aside .logo a span {
   font-family: "Clicker Script", cursive;
   font-size: 40px;
+}
+aside .logo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  border-top: 5px solid var(--skin-color);
+  border-right: 5px solid var(--skin-color);
+}
+aside .logo::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-bottom: 5px solid var(--skin-color);
+  border-left: 5px solid var(--skin-color);
 }

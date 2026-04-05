@@ -100,15 +100,38 @@ aside .logo::before {
   border-left: 5px solid var(--skin-color);
 }
 /* ====== */
-aside nav {
+
+.nav-toggler {
+  height: 40px;
+  width: 45px;
+  border: 1 solid var(--bg-black-50);
+  cursor: pointer;
+  position: fixed;
+  left: 300px;
+  top: 20px;
+  border-radius: 5px;
+  /* background: white; */
+  background: var(--bg-black-100);
+  z-index: 1;
+}
+aside .nav span,
+.lll {
+  width: 18px;
+  height: 2px;
+  background: var(--skin-color);
+  z-index: 800;
+  display: inline-block;
+}
+/* ====== */
+aside .nav {
   margin-top: 50px;
 }
-aside nav li {
+aside .nav li {
   margin-bottom: 50px;
   display: block;
 }
 
-aside nav li a {
+aside .nav li a {
   font-size: 16px;
   font-weight: 600;
   display: block;
@@ -116,14 +139,14 @@ aside nav li a {
   padding: 5px 15px;
   border-bottom: 1px solid var(--bg-black-50);
 }
-aside nav li a.active {
+aside .nav li a.active {
   color: var(--skin-color);
   transform: scale(1.5);
 }
-aside nav li a:not(.active):hover {
+aside .nav li a:not(.active):hover {
   transform: scale(1.2);
 }
-aside nav li a i {
+aside .nav li a i {
   margin-right: 15px;
 }
 /* ======= */

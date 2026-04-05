@@ -30,6 +30,7 @@ body {
   min-height: 100vh;
   display: block;
   position: fixed;
+  padding: 0 30px;
   left: 270px;
   top: 0;
   right: 0;
@@ -37,6 +38,25 @@ body {
   z-index: 0;
 }
 
+.padd-15 {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  /* background: violet; */
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  position: relative;
+}
 /* ========== */
 ul {
   list-style: none;
@@ -171,3 +191,25 @@ aside .nav li a i {
   margin-right: 15px;
 }
 /* ======= */
+/* ==== home ==== */
+.home {
+  min-height: 100vh;
+  display: flex;
+  color: var(--text-black-900);
+}
+.home .home-info {
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+
+.home .home-image {
+  flex: 0 0 40%;
+  max-width: 40%;
+  /* background: blueviolet; */
+  display: flex;
+  justify-content: center;
+}
+.home .home-image img {
+  height: 400px;
+}
+/* ====== */

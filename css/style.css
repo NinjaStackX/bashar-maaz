@@ -29,13 +29,10 @@ body {
   display: none;
   min-height: 100vh;
   display: block;
-  position: fixed;
+
   padding: 0 30px;
-  left: 270px;
-  top: 0;
-  right: 0;
+
   opacity: 1;
-  z-index: 0;
 }
 
 .padd-15 {
@@ -79,6 +76,7 @@ body {
   border: 2px solid var(--skin-color);
 }
 /* ========== */
+
 ul {
   list-style: none;
   /* background: #000; */
@@ -95,6 +93,7 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 /* ========== */
 aside .logo {
@@ -212,6 +211,9 @@ aside .nav li a i {
   margin-right: 15px;
 }
 /* ======= */
+.main-content {
+  padding-left: 270px;
+}
 /* ==== home ==== */
 .home {
   min-height: 100vh;

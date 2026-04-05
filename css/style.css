@@ -110,17 +110,38 @@ aside .logo::before {
   left: 300px;
   top: 20px;
   border-radius: 5px;
-  /* background: white; */
   background: var(--bg-black-100);
-  z-index: 1;
+  z-index: 800;
+  display: none;
+  justify-content: center;
+  align-items: center;
 }
-aside .nav span,
-.lll {
+.nav-toggler span {
   width: 18px;
   height: 2px;
+  position: relative;
   background: var(--skin-color);
   z-index: 800;
   display: inline-block;
+}
+
+.nav-toggler span::before {
+  content: "";
+  background: var(--skin-color);
+  height: 2px;
+  width: 18px;
+  position: absolute;
+  top: -6px;
+  left: 0px;
+}
+.nav-toggler span::after {
+  content: "";
+  background: var(--skin-color);
+  height: 2px;
+  width: 18px;
+  position: absolute;
+  top: 6px;
+  left: 0px;
 }
 /* ====== */
 aside .nav {

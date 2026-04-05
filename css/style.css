@@ -57,6 +57,27 @@ body {
   margin-left: -15px;
   position: relative;
 }
+
+.btn {
+  font-size: 16px;
+  font-weight: 500;
+  background: var(--skin-color);
+  padding: 12px 35px;
+  border-radius: 40px;
+  color: white;
+  border: none;
+  display: inline-block;
+  white-space: nowrap;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  transform: scale(1.09);
+  position: absolute;
+  font-size: 50px;
+  background: var(--bg-black-100);
+  color: var(--skin-color);
+  border: 2px solid var(--skin-color);
+}
 /* ========== */
 ul {
   list-style: none;
@@ -205,11 +226,62 @@ aside .nav li a i {
 .home .home-image {
   flex: 0 0 40%;
   max-width: 40%;
+  position: relative;
   /* background: blueviolet; */
   display: flex;
-  justify-content: center;
+  text-align: center;
 }
 .home .home-image img {
+  margin: auto;
+  border-radius: 5px;
   height: 400px;
 }
+
+.home-image::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  color: var(--skin-color);
+  border-right: 10px solid var(--skin-color);
+  border-bottom: 10px solid var(--skin-color);
+  bottom: -40px;
+  right: -10px;
+}
+.home-image::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  color: var(--skin-color);
+
+  border-left: 10px solid var(--skin-color);
+  border-top: 10px solid var(--skin-color);
+  top: -40px;
+  left: -10px;
+}
 /* ====== */
+h3.hello {
+  font-size: 28px;
+  margin: 15px 0;
+}
+h3.hello span {
+  font-family: "Clicker Script", cursive;
+  color: var(--skin-color);
+  font-size: 30px;
+  font-weight: 700;
+}
+h3.my-profession {
+  font-size: 30px;
+  margin: 15px 0;
+}
+
+.typing {
+  color: var(--skin-color);
+  font-weight: 400;
+}
+.home .home-info p {
+  margin-bottom: 70px;
+  font-size: 20px;
+  color: var(--text-black-700);
+}

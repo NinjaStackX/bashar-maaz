@@ -110,11 +110,11 @@ body {
 }
 .btn:hover {
   transform: scale(1.09);
-  position: absolute;
-  font-size: 50px;
-  background: var(--bg-black-100);
+  /* position: absolute; */
+  /* font-size: 50px; */
+  /* background: var(--bg-black-100);
   color: var(--skin-color);
-  border: 2px solid var(--skin-color);
+  border: 2px solid var(--skin-color); */
 }
 /* ========== */
 
@@ -353,12 +353,52 @@ h3.my-profession {
 .personal-info {
   flex: 0 0 60%;
   max-width: 60%;
-  background: violet;
+  /* background: violet; */
   margin-top: 40px;
 }
 .skills {
   flex: 0 0 40%;
   max-width: 40%;
-  background: greenyellow;
+  /* background: greenyellow; */
   margin-top: 40px;
+}
+.personal-info .info-item {
+  flex: 0 0 50%;
+  max-width: 50%;
+  /* background: violet; */
+}
+.personal-info .info-item p {
+  font-size: 16px;
+  color: var(--text-black-900);
+  padding: 10px 0px;
+  font-weight: 600;
+
+  border-bottom: 1px solid var(--bg-black-50);
+}
+
+.personal-info .info-item p span {
+  font-weight: 400;
+  color: var(--text-black-700);
+  margin-left: 5px;
+  display: inline-block;
+}
+.about .about-content .personal-info {
+  /* display: flex;
+  flex-wrap: wrap; */
+  margin-top: 30px;
+}
+.about .about-content .personal-info .info-item:nth-child(2n) p {
+  border: none;
+}
+.about .about-content .personal-info .buttons {
+  margin-top: 30px;
+}
+.about .about-content .personal-info .buttons .btn {
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.about .about-content .personal-info .buttons .hire-me {
+  background: transparent;
+  color: var(--text-black-900);
+  border: 2px solid var(--text-black-900);
 }

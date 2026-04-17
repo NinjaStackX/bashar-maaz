@@ -356,12 +356,6 @@ h3.my-profession {
   /* background: violet; */
   margin-top: 40px;
 }
-.skills {
-  flex: 0 0 40%;
-  max-width: 40%;
-  /* background: greenyellow; */
-  margin-top: 40px;
-}
 .personal-info .info-item {
   flex: 0 0 50%;
   max-width: 50%;
@@ -401,4 +395,44 @@ h3.my-profession {
   background: transparent;
   color: var(--text-black-900);
   border: 2px solid var(--text-black-900);
+}
+/* ========================== */
+.skills {
+  flex: 0 0 40%;
+  max-width: 40%;
+  /* background: greenyellow; */
+  margin-top: 40px;
+}
+
+.skill-item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  /* background: violet; */
+  margin-bottom: 2px;
+}
+.skill-item h5 {
+  font-size: 16px;
+  color: var(--text-black-900);
+  transform: capitalize;
+  line-height: 40px;
+  font-weight: 600;
+}
+.skill-item .progress {
+  width: 100%;
+  height: 7px;
+  background: var(--bg-black-50);
+  border-radius: 5px;
+  position: relative;
+}
+.skill-item .progress .progress-in {
+  height: 100%;
+  background: var(--skin-color);
+  border-radius: 5px;
+}
+.skill-item .progress .skill-precent {
+  position: absolute;
+  right: 0;
+  top: -40px;
+  font-weight: 400;
+  line-height: 40px;
 }
